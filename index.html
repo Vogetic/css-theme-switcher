@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Theme Switcher</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <form action="">
-        <label for="light">Light</label>
-        <input type="radio" name="light" id="light" />
-        <label for="dark">Dark</label>
-        <input type="radio" name="dark" id="dark" />
-        <label for="custom">Custom</label>
-        <input type="radio" name="custom" id="custom" />
+      <form action="" class="theme-switcher">
+        <label for="light">
+          <input type="radio" name="theme" id="light" value="light" checked />
+          Light
+        </label>
+
+        <label for="dark">
+          <input type="radio" name="theme" id="dark" value="dark" />
+          Dark
+        </label>
+        <label for="custom">
+          <input type="radio" name="theme" id="custom" value="custom" />
+          Custom
+        </label>
       </form>
     </header>
     <main>
